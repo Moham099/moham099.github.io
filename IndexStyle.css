@@ -1,8 +1,9 @@
 
+
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 15px/1.8 "Lato", sans-serif; 
   color: #777;
 }
 
@@ -52,6 +53,10 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
+}
+
+.icon{
+  margin: 0px 10px ;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
