@@ -19,18 +19,26 @@ body, html {
   float: none;
   position: relative;
   top: 25%;
-  left:40%;
+  left:35%;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 4px;
   
 }
 
 .topnav a:hover {
   background-color: #ddd;
   color: black;
+  transition: all 1s ease-out;
+  border-radius: 4px;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -42,18 +50,33 @@ body, html {
   background-size: cover;
 
 }
+
+.swbgimg-1, .swbgimg-2, .swbgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .bgimg-1 {
-  background-image: url("bgimg-1.jpg");
+  background-image: url("/Images/bgimg-1.jpg");
+  min-height: 80%;
+}
+
+.swbgimg-1{
+  background-image: url("/Images/swbg-1.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-image: url("bgimg-2.jpg");
+  background-image: url("/Images/bgimg-2.JPG");
   min-height: 400px;
 }
 
 .bgimg-3 {
-  background-image: url("bgimg-3.jpg");
+  background-image: url("/Images/bgimg-3.jpg");
   min-height: 400px;
 }
 
@@ -68,6 +91,7 @@ body, html {
 
 .caption span.border {
   background-color: #111;
+  border-radius: 4px;
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -82,8 +106,8 @@ h3 {
 }
 
 .icon{
-  margin: 0px 10px ;
-  box-shadow: #777;
+  margin: 0px 80px ;
+  justify-items: center;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
